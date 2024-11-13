@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"dengiaothong\startup_stm32f103x6.o"
+"dengiaothong\main.o"
+"dengiaothong\stm32f1xx_it.o"
+"dengiaothong\stm32f1xx_hal_msp.o"
+"dengiaothong\stm32f1xx_hal_gpio_ex.o"
+"dengiaothong\stm32f1xx_hal_tim.o"
+"dengiaothong\stm32f1xx_hal_tim_ex.o"
+"dengiaothong\stm32f1xx_hal.o"
+"dengiaothong\stm32f1xx_hal_rcc.o"
+"dengiaothong\stm32f1xx_hal_rcc_ex.o"
+"dengiaothong\stm32f1xx_hal_gpio.o"
+"dengiaothong\stm32f1xx_hal_dma.o"
+"dengiaothong\stm32f1xx_hal_cortex.o"
+"dengiaothong\stm32f1xx_hal_pwr.o"
+"dengiaothong\stm32f1xx_hal_flash.o"
+"dengiaothong\stm32f1xx_hal_flash_ex.o"
+"dengiaothong\stm32f1xx_hal_exti.o"
+"dengiaothong\system_stm32f1xx.o"
+--strict --scatter "DENGIAOTHONG\DENGIAOTHONG.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DENGIAOTHONG.map" -o DENGIAOTHONG\DENGIAOTHONG.axf
